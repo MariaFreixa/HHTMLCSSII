@@ -1,24 +1,201 @@
-<!DOCTYPE html>
-
-<html>
+<!doctype html>
+<html lang="es">
   <head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Maria Freixa</title>
   </head>
   <body>
-    <img src="./assets/images/logo.png" alt="Universitat Oberta de Catalunya" class="uoc-logo">
-    <h1 class="uoc-title">
-      <i class="fas fa-university"></i>
-      Hello, UOC!
-    </h1>
-    <p>
-      This is a starter template for the Advanced HTML and CSS Tools courses
-      from the Master's Program in Multimedia Applications and the Master's
-      Program in Web App and Website Development at the Universitat Oberta de
-      Catalunya.
-    </p>
+    <header class="header">
+      <h1 class="header__title header__title--highlighted">Hi! I'm <span>Maria</span> <br> a Software <span>Engineer</span><br>
+      </h1>
+      <div class="header__content">
+        <div class="header__social">
+          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="#"><i class="fab fa-github fa-2x"></i></a>
+          <a href="mailto:mariafreixatorres@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+        </div>
+      </div>
+    </header>
+    <nav class="menu">
+        <ul class="menu__content">
+          <li>
+            <a href="#aboutme">About me</a>
+          </li>
+          <li>
+            <a href="#language">Languages</a>
+          </li>
+          <li>
+            <a href="#academic">Academic background</a>
+          </li>
+          <li>
+            <a href="#experience">Professional experience</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#certifications">Certifications</a>
+          </li>
+          <li>
+            <a href="#interests">Interests</a>
+          </li>
+        </ul>
+    </nav>
+    <section class="section">
+      <div class="card--large">
+        <h2 class="section__title section__title--highlighted" id="aboutme">About <span>me</span></h2>
+        <p>Computer scientist with great interest in web development. I am passionate about building excellent software. With </p>
+      </div>
+    </section>
+    <section class="section" id="language">
+      <h2 class="section__title section__title--highlighted"><span>Languages</span></h2>
+      <div class="section__content section__content--row">
+          <div class="card card--small">
+              <p class="card__title">ES</p>
+          </div>
+          <div class="card card--small">
+              <p class="card__title">CAT</p>
+          </div>
+          <div class="card card--small">
+              <p class="card__title">EN</p>
+          </div>
+      </div>
+    </section>
+    <section class="section" id="academic">
+      <h2 class="section__title section__title--highlighted">Academic <span>background</span></h2>
+      <div class="section__content">
+        <div class="flip-card">
+          <div class="flip-card__container">
+            <div class="flip-card__front">
+              <div class="card__icon"><i class="fas fa-code fa-2x"></i></div>
+              <p class="card__title">Web Development</p>
+            </div>
+            <div class="flip-card__back">
+              <p class="card__title">2019-2022</p>
+              <p class="card__text card__text--flip">Master's degree in Web Development. UOC - Universitat Oberta de Catalunya, Spain</p>       
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card__container">
+            <div class="flip-card__front">
+              <div class="card__icon"><i class="fas fa-code fa-2x"></i></div>
+              <p class="card__title">Computer Engineering</p>
+            </div>
+            <div class="flip-card__back">
+              <p class="card__title">2009-2016</p>
+              <p class="card__text card__text--flip">Degree in Computer Engineering. UAB - Universitat Autonoma de Barcelona, Spain</p>       
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card__container">
+            <div class="flip-card__front">
+              <div class="card__icon"><i class="fas fa-language fa-2x"></i></div>
+              <p class="card__title">English</p>
+            </div>
+            <div class="flip-card__back">
+              <p class="card__title">2015-2017</p>
+              <p class="card__text card__text--flip">Certificate B2. Salt Idiomes, Spain</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <h2 class="section__title section__title--highlighted" id="experience">Professional <span>experience</span></h2>
+      <div class="section__content">
+          <div class="experience">
+              <div class="experience__element">
+                  <h3 class="experience__title">Technology Architecture Delivery Analyst - Accenture Technology</h3>
+                  <h4 class="experience__subtitle">September 2017 - Nowadays</h4>
+                  <p class="experience__content">Working in a important banking client, doing new development and bugs resolutions, using JSP, hibernate, Oracle, Java.</p>
+              </div>
+              <div class="experience__element">
+                  <h3 class="experience__title">Internship - Accenture Technology</h3>
+                  <h4 class="experience__subtitle">November 2016 - June 2017</h4>
+                  <p clas="experience__content">Intership in a important banking client. Working with Angular, html, java, unit test with Jasmine, microservices - spring cloud</p>
+              </div>
+          </div>
+      </div>
+    </section>
+    <section class="section">
+      <h2 class="section__title section__title--highlighted" id="skills"><span>Skills</span></h2>
+      <div class="section__content section__content--row">
+        <div class="card card--small card--rounded">
+            <div class="card__icon card__icon--no-margin"><i class="fab fa-css3-alt fa-1x"></i></div>
+        </div>
+        <div class="card card--small card--rounded">
+          <div class="card__icon card__icon--no-margin"><i class="fab fa-html5 fa-1x"></i></div>
+        </div>
+        <div class="card card--small card--rounded">
+          <div class="card__icon card__icon--no-margin"><i class="fab fa-angular fa-1x"></i></div>
+        </div>
+        <div class="card card--small card--rounded">
+          <div class="card__icon card__icon--no-margin"><i class="fab fa-java fa-1x"></i></div>
+        </div>
+        <div class="card card--small card--rounded">
+          <div class="card__icon card__icon--no-margin"><i class="fas fa-database fa-1x"></i></div>
+        </div>
+        <div class="card card--small card--rounded">
+          <div class="card__icon card__icon--no-margin"><i class="fab fa-node fa-1x"></i></div>
+        </div>
+        <div class="card card--small card--rounded">
+          <div class="card__icon card__icon--no-margin"><i class="fab fa-git fa-1x"></i></div>
+        </div>
+        <div class="card card--small card--rounded">
+          <div class="card__icon card__icon--no-margin"><i class="fab fa-bitbucket fa-1x"></i></div>
+        </div>
+        <div class="card card--small card--rounded">
+            <div class="card__icon card__icon--no-margin"><i class="fab fa-jenkins fa-1x"></i></div>
+        </div>
+        <div class="card card--small card--rounded">
+            <div class="card__icon card__icon--no-margin"><i class="fab fa-jira fa-1x"></i></div>
+        </div>
+        <div class="card card--small card--rounded">
+          <div class="card__icon card__icon--no-margin"><i class="fab fa-confluence fa-1x"></i></div>
+        </div>
+        <div class="card card--small card--rounded">
+          <div class="card__icon card__icon--no-margin"><i class="fas fa-file-word fa-1x"></i></div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="certifications">
+      <h2 class="section__title section__title--highlighted"><span>Certifications</span></h2>
+      <div class="section__content">
+          <div class="card card"> 
+              <img class="card__img" src="https://images.credential.net/badge/tiny/d8boywrw_badge.png" alt="Secure Application Architecture & IAM">
+          </div>
+          <div class="card card">
+            <img class="card__img" src="https://images.credential.net/badge/tiny/41q84g0q_badge.png" alt="API Security">
+          </div>
+          <div class="card card">
+            <img class="card__img" src="https://images.credential.net/badge/tiny/s59ecfzh_badge.png" alt="Application Security Awareness & Validation">
+          </div>
+      </div>
+    </section>
+    <section class="section" id="interests">
+      <h2 class="section__title section__title--highlighted"><span>Interests</span></h2>
+      <div class="section__content">
+        <div class="card">
+            <div class="card__icon"><i class="fas fa-gamepad fa-2x"></i></div>
+            <p class="card__title">Video Games</p>
+        </div>
+        <div class="card">
+            <div class="card__icon"><i class="fas fa-robot fa-2x"></i></div>
+            <p class="card__title">Robotics</p>
+        </div>
+        <div class="card">
+          <div class="card__icon"><i class="fas fa-plane fa-2x"></i></i></div>
+          <p class="card__title">Travelling</p>
+        </div>
+      </div>
+    </section>
     <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
